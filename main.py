@@ -8,10 +8,15 @@ from aiogram.types import Message, BufferedInputFile
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
-from api_token import TOKEN
 
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)

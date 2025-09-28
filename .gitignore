@@ -60,7 +60,6 @@ dmypy.json
 # Local env files
 .env
 .env.*
-*.env
 
 # macOS
 .DS_Store
